@@ -31,8 +31,8 @@ async function getPlanets() {
         document.querySelector(".name").innerText = data.bodies[i].name;
         document.querySelector(".latinName").innerText = data.bodies[i].latinName;
         document.querySelector(".desc").innerText = data.bodies[i].desc;
-        document.querySelector(".circumference").innerText = data.bodies[i].circumference + " km";
-        document.querySelector(".distance").innerText = data.bodies[i].distance + " km";
+        document.querySelector(".circumference").innerText = data.bodies[i].circumference.toLocaleString() + " km";
+        document.querySelector(".distance").innerText = data.bodies[i].distance.toLocaleString() + " km";
         document.querySelector(".tempDay").innerText = data.bodies[i].temp.day + " C";
         document.querySelector(".tempNight").innerText = data.bodies[i].temp.night + " C";
         document.querySelector(".moons").innerText = data.bodies[i].moons;
@@ -43,6 +43,8 @@ closeOverlay.addEventListener("click", () =>{
   document.querySelector("#overlay").classList.toggle("show");
   console.log("du har klickat")
 });
+
+
 
 
 
