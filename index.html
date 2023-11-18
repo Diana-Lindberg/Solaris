@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=IM+Fell+English+SC&family=MedievalSharp&family=Secular+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=IM+Fell+English+SC&family=MedievalSharp&family=Roboto+Condensed:wght@100&family=Secular+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>SOLARIS</title>
 </head>
 <body>
     <section class="main__header">
@@ -13,27 +20,42 @@
         </section>
     
         <section id="overlay">
+            <div class="closeOverlay">&times;</div>
             <article class="info__frame">
-            <div>
+
+            <div class="info__section">
                 <h1 class="name"></h1>
                 <h2 class="latinName"></h2>
                 <p class="desc"></p>
             </div>
-            <div>
+
+            <div class="details__section">
+                <div class="item">
                 <h3>OMKRETS</h3>
-                <p class="circumference"></p>
-
-                <h3>AVSTÅND</h3>
-                <p class="distance"></p>
-
-                <h3>MAX TEMPERATUR</h3>
-                <p class="tempDay"></p>
-
-                <h3>MIN TEMPERATUR</h3>
-                <p class="tempNight"></p>
+                <p class="circumference" style=" font-family: Roboto Condensed"></p>
             </div>
+
+            <div class="item">
+                <h3>KM FRÅN SOLEN</h3>
+                <p class="distance" style=" font-family: Roboto Condensed"></p>
+            </div>
+            </div>
+
+            <div class="temperature__section">
+                <div class="temperature__item">
+                    <h3>MAX TEMPERATUR</h3>
+                    <p class="tempDay" style="font-family: Roboto Condensed"></p>
+                </div>
+            
+                <div class="temperature__item">
+                    <h3>MIN TEMPERATUR</h3>
+                    <p class="tempNight" style=" font-family: Roboto Condensed"></p>
+                </div>
+            </div>
+                <div>
                 <h3>MÅNAR</h3>
-                <p class="moons"></p>
+                <p class="moons" style="font-family: Roboto Condensed;  word-wrap: break-word;"></p>
+            </div>
             </article>
         </section>
 
