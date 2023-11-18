@@ -62,6 +62,16 @@ body{
     display: none;
 }  
 
+.stars{
+   position: absolute;
+    width: 2px;
+    height:2px;
+    margin-top: 128.63px;
+    margin-left: 100px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
 #overlay.show {
     display: flex;
 }
